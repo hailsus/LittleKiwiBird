@@ -1,17 +1,39 @@
 <HTML>
 	<head>
 		<title>LittleKiwiBird</title>
+		<link rel="stylesheet" href="/css/main.css" type="text/css" charset="utf-8" />
+		<link rel="stylesheet" href="/css/fonts.css" type="text/css" charset="utf-8" />
+		<link rel="stylesheet" href="/css/colours.css" type="text/css" charset="utf-8" />
+		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+		<script type="text/javascript" src="js/locations.js"></script>
 	</head>
 	<body>
 		<div id="content">
 			<header>
-				<img id="logo" src="http://lorempixel.com/1024/280/animals/" />
+				<img id="logo" src="/img/logo.png" />
 			</header>
-			<article>
+			<article id="digestable" class="bordered-cell">
 				<section>
-					<p>Under Construction</p>
+					<h1>Where in the world can we find Enspiralites?</h1>
+					<p>A wold map showing locations of enspiral members, scraped from the brains of enspiral members</p>
+					<div id="map">
+					</div>
+					<div id="map-legend">
+						<h2>Side Bar!</h2>
+						<p>People count and other statistics will go in here</p>
+						<ul id="places-list"></ul>
+					</div>
 				</section>
 			</article>
+			<footer class="bordered-cell">
+				<small>
+					&copy; 2016, Haley Littlewood
+				</small>
+			</footer>
 		</div>
+		<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+		<script src="js/l.control.geosearch.js"></script>
+		<script src="js/l.geosearch.provider.openstreetmap.js"></script>
+		<script type="text/javascript" src="js/map.js"></script>
 	</body>
 </HTML>
